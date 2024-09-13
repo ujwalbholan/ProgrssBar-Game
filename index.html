@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Games</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 style="color: aliceblue; margin: 50px 0 50px 0">
+        MY PROGRESS BAR GAME
+      </h1>
+      <div class="progessBar">
+        <div class="player">
+          <span style="color: aliceblue">PLAYER 1</span>
+          <progress id="val1" value="100" max="100" class="progress"></progress>
+        </div>
+        <div class="player">
+          <span style="color: aliceblue">PLAYER 2</span>
+          <progress id="val2" value="100" max="100" class="progress"></progress>
+        </div>
+      </div>
+
+      <button onclick="myChangeVal()" id="buttenAttack">ATTACK</button>
+      <button
+        onclick="reset()"
+        id="button"
+        class="button"
+        style="display: none"
+      >
+        RESET
+      </button>
+      <div id="button"></div>
+      <div id="showDamageLevel3" style="padding: 5px; color: aliceblue"></div>
+      <div class="playerAttactScore">
+        <div
+          id="showDamageLevel"
+          style="padding: 5px; margin: 50px; color: aliceblue"
+        ></div>
+        <div
+          id="showDamageLevel2"
+          style="padding: 5px; margin: 50px; color: aliceblue"
+        ></div>
+      </div>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
